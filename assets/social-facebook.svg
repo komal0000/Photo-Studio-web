@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="facebook" transform="translate(772.2 -114.8)">
+    <g id="Group_18" data-name="Group 18" transform="translate(-772.2 114.8)">
+      <g id="Group_17" data-name="Group 17" transform="translate(0)">
+        <path id="Path_9" data-name="Path 9" d="M-772.2,132.8v-18h18v18Z" transform="translate(772.2 -114.8)" fill="none"/>
+        <g id="Group_16" data-name="Group 16" transform="translate(4.8 1.8)">
+          <path id="Path_10" data-name="Path 10" d="M-733.96,142.64v-7.2h-2.4v-2.4h2.4v-1.289c0-2.44,1.188-3.511,3.216-3.511a11.7,11.7,0,0,1,1.728.1v2.295H-730.4c-.861,0-1.162.454-1.162,1.375v1.025h2.523l-.343,2.4h-2.18v7.2Z" transform="translate(736.36 -128.24)" fill="#fff"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

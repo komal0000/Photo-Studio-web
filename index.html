@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Phlox Studio — cinematic photography, films, and editorial portraiture."
+    />
+    <meta name="theme-color" content="#080808" />
+    <title>Phlox Studio — Photography & Film</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Phlox Studio home">
+        <span class="brand-mark" aria-hidden="true"><span>P</span></span>
+        <span class="brand-name">Phlox Studio</span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="site-navigation"
+        aria-expanded="false"
+        data-menu-toggle
+      >
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Primary navigation" data-nav>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#videos">Videos</a>
+        <a class="nav-book" href="#magazine">Book Now</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section
+        class="hero"
+        id="home"
+        aria-labelledby="hero-title"
+        aria-roledescription="carousel"
+        aria-label="Featured studio portraits"
+        tabindex="0"
+        data-hero-carousel
+      >
+        <div class="hero-slides" aria-live="polite">
+          <figure class="hero-slide is-active" aria-hidden="false" data-hero-slide>
+            <img class="hero-ellipse" src="assets/ellipse.svg" alt="" />
+            <img class="hero-portrait" src="assets/hero-alt.jpg" alt="Painted black and white studio portrait" />
+          </figure>
+          <figure class="hero-slide" aria-hidden="true" data-hero-slide>
+            <img class="hero-ellipse" src="assets/ellipse.svg" alt="" />
+            <img class="hero-portrait" src="assets/hero.jpg" alt="Black and white sculptural fashion portrait" />
+          </figure>
+          <figure class="hero-slide" aria-hidden="true" data-hero-slide>
+            <img class="hero-ellipse" src="assets/ellipse.svg" alt="" />
+            <img class="hero-portrait" src="assets/hero-3.jpg" alt="Black and white portrait wearing round sunglasses" />
+          </figure>
+        </div>
+
+        <div class="hero-copy">
+          <h1 id="hero-title">Photography<br />Studio</h1>
+          <h2>Who We Are?</h2>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type.
+          </p>
+          <a class="outline-button" href="#about">Read more about us</a>
+        </div>
+
+        <button class="hero-count" type="button" aria-label="Show next photograph" data-hero-next>
+          <strong data-hero-number>01</strong>
+          <span aria-hidden="true"></span>
+          <small>03</small>
+        </button>
+
+        <button
+          class="hero-autoplay"
+          type="button"
+          aria-label="Pause slideshow"
+          aria-pressed="false"
+          data-hero-autoplay
+        >
+          <span class="pause-icon" aria-hidden="true"><i></i><i></i></span>
+          <span class="play-icon" aria-hidden="true"></span>
+        </button>
+
+        <div class="hero-socials" aria-label="Social links">
+          <a href="#contact" aria-label="Behance"><img src="assets/social-behance.svg" alt="" /></a>
+          <a href="#contact" aria-label="Facebook"><img src="assets/social-facebook.svg" alt="" /></a>
+          <a href="#contact" aria-label="LinkedIn"><img src="assets/social-linkedin.svg" alt="" /></a>
+          <a href="#contact" aria-label="X"><img src="assets/social-x.svg" alt="" /></a>
+        </div>
+
+        <p class="hero-instruction">Drag or use arrow keys</p>
+      </section>
+      <section class="best-shots section" id="about" aria-labelledby="shots-title">
+        <div class="best-shots-text reveal">
+          <p class="eyebrow">Selected stories</p>
+          <h2 class="display-title" id="shots-title">Best Shots</h2>
+          <p>
+            I don’t rush, I don’t stylize, I just experience and grasp emotions
+            which float in the air. I capture moments the way they come.
+          </p>
+          <a class="outline-button" href="#portfolio">Browse all images</a>
+        </div>
+
+        <div class="shots-backdrop" aria-hidden="true">
+          <img src="assets/best-shots-bg.png" alt="" />
+        </div>
+
+        <div
+          class="shots-gallery reveal"
+          aria-label="Featured photographs"
+          aria-roledescription="carousel"
+          data-shots-carousel
+        >
+          <div class="shots-viewport">
+            <div class="shots-track" data-shots-track>
+              <figure class="shot is-active" data-shot>
+                <img src="assets/editorial-1.jpg" alt="Editorial portrait with colorful face paint" />
+              </figure>
+              <figure class="shot" data-shot>
+                <img src="assets/editorial-2.jpg" alt="Black and white editorial portrait" />
+              </figure>
+              <figure class="shot" data-shot>
+                <img src="assets/editorial-3.jpg" alt="Monochrome editorial portrait" />
+              </figure>
+              <figure class="shot" data-shot>
+                <img src="assets/editorial-4.jpg" alt="Fashion portrait in dramatic light" />
+              </figure>
+              <figure class="shot" data-shot>
+                <img src="assets/editorial-5.jpg" alt="Natural-light portrait" />
+              </figure>
+            </div>
+          </div>
+          <div class="shots-controls">
+            <button type="button" data-shots-prev>Prev</button>
+            <span aria-hidden="true"></span>
+            <button type="button" data-shots-next>Next</button>
+          </div>
+        </div>      </section>
+
+      <section class="services section" aria-label="Studio services">
+        <div class="service-card reveal">
+          <img src="assets/service-shooting.jpg" alt="Photographer shooting outdoors" />
+          <div class="service-card-copy">
+            <svg viewBox="0 0 64 52" aria-hidden="true">
+              <path d="M7 14h12l4-7h18l4 7h12v33H7z" />
+              <circle cx="32" cy="30" r="11" />
+            </svg>
+            <h3>Shooting</h3>
+            <p>Portraits shaped by presence, atmosphere, and available light.</p>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <img src="assets/service-video.jpg" alt="Filmmaker working with a cinema camera" />
+          <div class="service-card-copy">
+            <svg viewBox="0 0 64 52" aria-hidden="true">
+              <rect x="6" y="10" width="52" height="32" rx="8" />
+              <path d="m27 20 14 6-14 7z" />
+            </svg>
+            <h3>Video</h3>
+            <p>Short films and moving portraits with a cinematic point of view.</p>
+          </div>
+        </div>
+
+        <div class="service-card reveal">
+          <img src="assets/service-editing.jpg" alt="Editor reviewing footage at a workstation" />
+          <div class="service-card-copy">
+            <svg viewBox="0 0 64 52" aria-hidden="true">
+              <path d="m9 40 12-27 15 22 8-13 11 18z" />
+              <path d="M8 45h48" />
+            </svg>
+            <h3>Editing</h3>
+            <p>Considered color, rhythm, and finishing that keeps every frame honest.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-feature section" id="videos" aria-labelledby="videos-title">
+        <div class="video-feature-image reveal">
+          <img src="assets/video-cover.jpg" alt="Couple standing on a dramatic black sand beach" />
+          <button class="play-button" type="button" data-open-video aria-label="Play studio showreel">
+            <span aria-hidden="true"></span>
+          </button>
+        </div>
+
+        <div class="video-feature-copy reveal">
+          <p class="eyebrow">Stories in motion</p>
+          <h2 class="display-title" id="videos-title">Videos</h2>
+          <p>
+            Movement reveals what a single frame leaves unsaid. Our films are intimate,
+            observant, and edited to feel as natural as the day itself.
+          </p>
+          <button class="outline-button" type="button" data-open-video>See more</button>
+        </div>
+      </section>
+
+      <section class="portfolio section" id="portfolio" aria-labelledby="portfolio-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Recent work</p>
+          <h2 class="display-title" id="portfolio-title">Portfolio</h2>
+        </div>
+
+        <div class="portfolio-filters" role="group" aria-label="Filter portfolio">
+          <button class="is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="advertising" aria-pressed="false">Advertising</button>
+          <button type="button" data-filter="fashion" aria-pressed="false">Fashion</button>
+          <button type="button" data-filter="freestyle" aria-pressed="false">Freestyle</button>
+          <button type="button" data-filter="kids" aria-pressed="false">Kids</button>
+          <button type="button" data-filter="nature" aria-pressed="false">Nature</button>
+          <button type="button" data-filter="sports" aria-pressed="false">Sports</button>
+          <button type="button" data-filter="wedding" aria-pressed="false">Wedding</button>
+        </div>
+
+        <div class="portfolio-grid" data-portfolio-grid>
+          <article class="portfolio-item reveal" data-category="fashion advertising">
+            <img src="assets/portfolio-1.jpg" alt="Fashion editorial in the desert" />
+            <div><span>Fashion</span><h3>Desert Form</h3></div>
+          </article>
+          <article class="portfolio-item reveal" data-category="fashion freestyle">
+            <img src="assets/portfolio-2.jpg" alt="Black and white fashion campaign" />
+            <div><span>Editorial</span><h3>Double Take</h3></div>
+          </article>
+          <article class="portfolio-item reveal" data-category="wedding advertising">
+            <img src="assets/portfolio-3.jpg" alt="Bride in a detailed wedding dress" />
+            <div><span>Wedding</span><h3>Quiet Vows</h3></div>
+          </article>
+          <article class="portfolio-item reveal" data-category="fashion sports">
+            <img src="assets/portfolio-4.jpg" alt="Monochrome fashion portrait" />
+            <div><span>Portrait</span><h3>Still Power</h3></div>
+          </article>
+          <article class="portfolio-item reveal" data-category="kids nature freestyle">
+            <img src="assets/portfolio-5.jpg" alt="Child and dog at a wedding reception" />
+            <div><span>Documentary</span><h3>Best Friend</h3></div>
+          </article>
+        </div>
+
+        <a class="outline-button portfolio-cta" href="#magazine">Browse all images</a>
+      </section>
+
+      <section class="magazine section" id="magazine" aria-labelledby="magazine-title">
+        <div class="magazine-shell reveal">
+          <div class="magazine-art">
+            <img src="assets/magazine.jpg" alt="Phlox art photography magazine cover" />
+          </div>
+
+          <div class="magazine-copy">
+            <p class="eyebrow">Volume 08 · Quarterly</p>
+            <h2 class="display-title" id="magazine-title">Studio Magazine</h2>
+            <h3>Magazine subscription</h3>
+            <p>
+              A seasonal collection of new photography, location notes, and the ideas
+              behind our latest films. Delivered four times a year.
+            </p>
+
+            <form class="subscribe-form" data-subscribe-form>
+              <label for="subscriber-email">Email address</label>
+              <div>
+                <input
+                  id="subscriber-email"
+                  name="email"
+                  type="email"
+                  placeholder="Email Address"
+                  autocomplete="email"
+                  required
+                />
+                <button type="submit">Join</button>
+              </div>
+              <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-inner">
+        <a class="brand brand-footer" href="#home" aria-label="Phlox Studio home">
+          <span class="brand-mark" aria-hidden="true"><span>P</span></span>
+          <span class="brand-name">Phlox Studio</span>
+        </a>
+
+        <div class="footer-socials" aria-label="Social links">
+          <a href="#contact" aria-label="Behance">Bē</a>
+          <a href="#contact" aria-label="X">x</a>
+          <a href="#contact" aria-label="Facebook">f</a>
+          <a href="#contact" aria-label="LinkedIn">in</a>
+        </div>
+
+        <div class="footer-contacts">
+          <a href="tel:+19858987522">+1 985 898 7522</a>
+          <a href="tel:+19858987512">+1 985 898 7512</a>
+          <a href="mailto:support@phlox.com">support@phlox.com</a>
+        </div>
+        <address>USA, New York, 520 E 6th St, NY 20005</address>
+      </div>
+
+      <p class="copyright">© <span data-year></span> Phlox Studio. All rights reserved.</p>
+    </footer>
+
+    <dialog class="video-modal" data-video-modal aria-labelledby="video-modal-title">
+      <button class="modal-close" type="button" data-close-video aria-label="Close video">×</button>
+      <div class="modal-player">
+        <img src="assets/video-cover.jpg" alt="" />
+        <span class="modal-play" aria-hidden="true"></span>
+      </div>
+      <p class="eyebrow">Studio showreel</p>
+      <h2 id="video-modal-title">The beauty between the frames.</h2>
+      <p>Connect this preview to your Vimeo, YouTube, or self-hosted showreel.</p>
+    </dialog>
+  </body>
+</html>
